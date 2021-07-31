@@ -1,0 +1,89 @@
+/* reset */
+div, span {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: black /*#0c1011*/;
+	color: white;
+	font-family: verdana;
+	font-size: 27px;
+}
+.cuerpo {
+	/* width: 1200px;
+	margin: 50px auto 100px; */	
+	margin: -17px 1% 100px 2%;
+}
+p {
+	padding: 0.7346em 10px;
+}
+tbody tr td{
+	border: 1px solid;
+	padding: 10px;
+}
+a {
+	text-decoration: none;
+	color: lightgreen;
+}
+::-webkit-scrollbar {
+	width: 20px;
+}
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: white; 
+	border-radius: 10px;
+}
+::-webkit-scrollbar-button {
+	height: 20%;
+}
+.botones {
+	/* sticky arriba */
+	/*position: sticky;
+	top: 0;
+	left: 2%;
+	border-radius: 10px;
+	background-color: white;
+	padding: 10px;
+	width: 198px;
+	margin-top: 50px;*/
+	
+	/* abajo fijo */
+	position: fixed; 
+	top: 90%;
+	left: 2%;
+	border-radius: 10px;
+	background-color: lightgray;
+	padding: 10px;
+	user-select: none;
+}
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	height: 48px;
+	outline: none;
+	padding: 0;
+	width: 48px;
+}
+#play {
+	background-image: url(../imagenes/play.svg);
+}
+#play.played {
+	background-image: url(../imagenes/play1.svg);
+}
+#pause {
+	background-image: url(../imagenes/pause.svg);
+}
+#pause.paused {
+	background-image: url(../imagenes/pause1.svg);
+}
+#stop {
+	background-image: url(../imagenes/stop.svg);
+}
+#stop.stopped {
+	background-image: url(../imagenes/stop1.svg);
+}
