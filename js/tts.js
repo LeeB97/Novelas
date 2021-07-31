@@ -9,7 +9,7 @@ addEventListener('load', function() {
 		mensaje = new SpeechSynthesisUtterance(document.querySelector('.cuerpo').textContent);
 		mensaje.voice = getVoices()[voz];
 		//mensaje.volume = 1.2;
-		mensaje.rate = 1.2589;
+		mensaje.rate = 1.115; //2589
 		//mensaje.pitch = 0.5;
 		mensaje.onend = function() {
 			if(!speaking) {
@@ -37,7 +37,7 @@ addEventListener('load', function() {
 						target.parentNode.firstElementChild.remove();
 					}
 					mensaje = new SpeechSynthesisUtterance(document.querySelector('.cuerpo').textContent);
-					mensaje.rate = 1.2589;
+					mensaje.rate = 1.115;
 					setVoz();
 					cancel(mensaje);
 					speak(mensaje);
